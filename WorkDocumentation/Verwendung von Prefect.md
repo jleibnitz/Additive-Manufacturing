@@ -299,4 +299,5 @@ See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more inform
 
 https://apps.microsoft.com/detail/9mv6gl23xm59?hl=de-DE&gl=DE
 
-![[OraSlicer_StartInitial.png]]
+![Start Bildschirm Orca Slicer](/Media/OraSlicer_StartInitial.png)
+
