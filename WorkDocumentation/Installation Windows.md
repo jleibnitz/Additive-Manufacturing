@@ -13,7 +13,8 @@ Es wird ein Paketmanager "CONDA" benötigt der holt die Binaries:
 5. Installieren der Binaries zu "Prefect" und "trimesh"
 	1. `conda install -c conda-forge prefect trimesh -y
 6. Test ob "prefect" installiert wurde
-	1. `conda list prefect` ```
+	1. `conda list prefect`
+    		```
 			# packages in environment at C:\Users\User\.conda\envs\conda-env:
 			#
 			# Name                     Version          Build            Channel
