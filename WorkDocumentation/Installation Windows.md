@@ -15,7 +15,6 @@ Es wird ein Paketmanager "CONDA" benötigt der holt die Binaries:
 6. Test ob "prefect" installiert wurde
 	1. `conda list prefect`
 
-    		```
 			# packages in environment at C:\Users\User\.conda\envs\conda-env:
 			#
 			# Name                     Version          Build            Channel
