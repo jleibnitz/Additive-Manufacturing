@@ -1,6 +1,6 @@
 Es wird ein Paketmanager "CONDA" benötigt der holt die Binaries:
 
-1. MIniforge installieren (enthält CONDA)
+1. Miniforge installieren (enthält CONDA)
 	1. https://conda-forge.org/download/
 2. Aktivieren von CONDA
 	1.  für Powershell (PS) in DOS Befehlszeile (CMD)
@@ -18,7 +18,7 @@ Es wird ein Paketmanager "CONDA" benötigt der holt die Binaries:
 			# packages in environment at C:\Users\User\.conda\envs\conda-env:
 			#
 			# Name                     Version          Build            Channel
-			prefect                    3.9.2            pypi_0           pypi ```
+			prefect                    3.9.2            pypi_0           pypi 
 7. Abhängige Pakete aktualisieren
 	1. `pip install "sqlalchemy<2.1.0"`
 	2. `pip install --upgrade prefect fastapi pydantic`
