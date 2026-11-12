@@ -1,0 +1,4 @@
+# Ignoriert standardmäßig alle Dateien/Ordner, die mit einem Punkt beginnen
+.*
+# .gitignore ist eine Ausnahme, damit sie nicht ignoriert wird
+!.gitignore
