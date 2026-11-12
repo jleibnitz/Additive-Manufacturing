@@ -296,4 +296,7 @@ See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more inform
 12:43:36.431 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8351
 ```
 ## Installieren die OrcaSlicer App
+
 https://apps.microsoft.com/detail/9mv6gl23xm59?hl=de-DE&gl=DE
+
+![[OraSlicer_StartInitial.png]]
