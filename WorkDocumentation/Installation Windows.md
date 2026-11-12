@@ -4,7 +4,7 @@ Es wird ein Paketmanager "CONDA" benötigt der holt die Binaries:
 	1. https://conda-forge.org/download/
 2. Aktivieren von CONDA
 	1.  für Powershell (PS) in DOS Befehlszeile (CMD)
-		1. `D:\ProgramData\miniforge3\Scripts\conda.exe init powershell
+		1. `D:\ProgramData\miniforge3\Scripts\conda.exe init powershell`
 		2. `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 3. Dann im Arbeitsverzeichnis eine CONDA Umgebung setzen
 	1. `conda create --name conda-env
