@@ -17,7 +17,7 @@ Es wird ein Paketmanager "CONDA" benötigt der holt die Binaries:
 			# packages in environment at C:\Users\User\.conda\envs\conda-env:
 			#
 			# Name                     Version          Build            Channel
-			prefect                    3.9.2            pypi_0           pypi 
+			prefect                    3.9.2            pypi_0           pypi ```
 7. Abhängige Pakete aktualisieren
 	1. `pip install "sqlalchemy<2.1.0"
 	2. `pip install --upgrade prefect fastapi pydantic
