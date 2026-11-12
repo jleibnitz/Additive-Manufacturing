@@ -145,7 +145,6 @@ Lokales Endergebnis des Kerns: {'auftrag': '4711', 'ergebnis': {'status': 'Erfol
 15:11:59.589 | ←[36mINFO←[0m    | prefect - Stopping temporary server on ←[94mhttp://127.0.0.1:8444←[0m
 ```
 ## Open Whisper installieren
-
 	pip install openai-whisper
 #### pipeline_modular.py
 ```
@@ -270,6 +269,31 @@ if __name__ == "__main__":
     }
     bericht_2 = modularer_workflow_kern(auftrags_typ="audio_transkript", auftrags_daten=auftrag_2)
     print("\n[Protokoll Kern] Lauf 2:", bericht_2)
+```
+#### Start / Ausgabe des Programms (*pipeline_modular.py*) 
+```
+(python-env) (conda-env) PS D:\Projekte\AdditiveManufacturing\ProtoType> python pipeline_modular.py
+12:43:30.870 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8351
+See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+12:43:34.422 | INFO    | Flow run 'romantic-spider' - Beginning flow run 'romantic-spider' for flow 'Modulare Mechatronik Pipeline'
+12:43:34.427 | INFO    | Flow run 'romantic-spider' - === Starte Auftrag vom Typ: 3d_druck ===
+12:43:34.442 | INFO    | Task run 'pruefe_bauteil-419' - [3D-Druck] Prüfe Bauteil: 4711
+12:43:34.443 | INFO    | Task run 'pruefe_bauteil-419' - Finished in state Completed()
+12:43:34.536 | ←[36mINFO←[0m    | Task run 'generiere_druckdatei-05e' - Finished in state ←[32mCompleted←[0m()
+12:43:34.537 | ←[36mINFO←[0m    | Flow run←[35m 'romantic-spider'←[0m - === Ende des Auftrags 3d_druck ===
+12:43:34.553 | ←[36mINFO←[0m    | Flow run←[35m 'romantic-spider'←[0m - Finished in state ←[32mCompleted←[0m()
+
+[Protokoll Kern] Lauf 1: {'typ': '3d_druck', 'erfolgreich': True, 'pruefung': {'status': 'geprüft', 'verfahren': 'FDM', 'nacharbeit': 'M4-Gewinde'}, 'datei': 'ausgabe_profil.gcode'}
+12:43:34.597 | ←[36mINFO←[0m    | Flow run←[35m 'jovial-peccary'←[0m - Beginning flow run←[35m 'jovial-peccary'←[0m for flow←[1;35m 'Modulare Mechatronik Pipeline'←[0m
+12:43:34.598 | ←[36mINFO←[0m    | Flow run←[35m 'jovial-peccary'←[0m - === Starte Auftrag vom Typ: audio_transkript ===
+12:43:34.602 | ←[36mINFO←[0m    | Task run 'transkribiere_audio-413' - [Whisper] Starte lokale Transkription für: notiz.wav
+12:43:36.393 | INFO    | Task run 'transkribiere_audio-413' - Whisper-Transkription erfolgreich abgeschlossen.
+12:43:36.395 | INFO    | Task run 'transkribiere_audio-413' - Finished in state Completed()
+12:43:36.396 | INFO    | Flow run 'jovial-peccary' - === Ende des Auftrags audio_transkript ===
+12:43:36.413 | INFO    | Flow run 'jovial-peccary' - Finished in state Completed()
+
+[Protokoll Kern] Lauf 2: {'typ': 'audio_transkript', 'erfolgreich': True, 'transkript': {'status': 'Transkribiert', 'text_vorschau': 'Mustertext: Bauteil 4711 weist Maßabweichungen auf...', 'werkzeug': 'Whisper-Base'}}
+12:43:36.431 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8351
 ```
 ## Installieren die OrcaSlicer App
 https://apps.microsoft.com/detail/9mv6gl23xm59?hl=de-DE&gl=DE
