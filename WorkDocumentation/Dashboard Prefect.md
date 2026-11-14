@@ -2,14 +2,12 @@
 ![StartServer](../Media/startPrefectServer.png)
 
 ## Main Board
-
 ![Main](../Media/DashBoardMain.png)
 
 ## Flow Runs
-![FlowRuns](Media/FlowRuns.png)
+![FlowRuns](../Media/FlowRuns.png)
 
 ## Running Table
-
 ![Runs](../Media/Runs.png)
 
 ## Run Details
