@@ -41,7 +41,7 @@ Workflow erfolgreich beendet! Ergebnis: [2, 4, 6, 8, 10]
 15:05:56.393 | INFO    | Flow run 'unstoppable-sunfish' - Finished in state Completed()
 15:05:56.400 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8977
 ```
-## Das vorbereitete Pipeline - Script für die Aufgabe
+## Die vorbereitete Pipeline - Script für die Aufgabe
 #### pipeline.py
 ```
 import os
