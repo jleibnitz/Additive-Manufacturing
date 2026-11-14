@@ -1,6 +1,6 @@
 
 ## ...aus fachlicher Sicht
-![Ablaufdiagramm](../Media/Ablaufdiagramm.jpg)
+![Ablaufdiagramm](./Media/Ablaufdiagramm.jpg)
 
 - Empfang der Sprachnachricht für einen Auftrag
 	- *Beispiel:* `Benötige einen Schraubendreherhalter`
